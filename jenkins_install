@@ -1,6 +1,10 @@
 #!/bin/bash
 sudo yum install java -y
-# Jenkins repo is added to yum.repos.d
+
+# Jenkins repo is added to yum.repos.d  downloading the jenkins repo into our local disk under linux repos 
+#Note -: In general, a repository is a storage of software packages.
+#YUM is a Linux utility that works with RPM and helps us download any software package to our local disk from a remote.
+
 sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
 
 # Import key from Jenkins
